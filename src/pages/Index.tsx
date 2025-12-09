@@ -127,6 +127,18 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-secondary/20 to-background">
+      <a
+        href="https://wa.me/79994483326"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-[#25D366] hover:bg-[#20BA5A] rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 animate-fade-in group"
+        aria-label="Написать в WhatsApp"
+      >
+        <Icon name="MessageCircle" className="text-white" size={28} />
+        <span className="absolute right-full mr-3 bg-foreground text-background px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+          Напишите нам!
+        </span>
+      </a>
       <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm shadow-sm z-50 border-b">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
