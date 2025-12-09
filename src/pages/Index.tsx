@@ -147,7 +147,7 @@ const Index = () => {
               <span className="text-2xl font-bold text-primary">GreenScape</span>
             </div>
             <div className="hidden md:flex gap-6">
-              {['Главная', 'Услуги', 'Портфолио', 'Блог', 'Отзывы', 'Контакты'].map((item) => (
+              {['Главная', 'О нас', 'Услуги', 'Портфолио', 'Блог', 'Отзывы', 'Контакты'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
@@ -211,6 +211,59 @@ const Index = () => {
                 alt="Красивый ландшафтный дизайн"
                 className="relative rounded-2xl shadow-2xl w-full h-auto object-cover"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="о нас" className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1604881991720-f91add269bed?w=800&q=80"
+                alt="Наша команда"
+                className="rounded-2xl shadow-xl w-full h-auto object-cover"
+              />
+            </div>
+            <div>
+              <Badge className="mb-4">О нас</Badge>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">Профессионалы своего дела</h2>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                GreenScape — это команда опытных ландшафтных дизайнеров, садовников и инженеров, которые с 2010 года создают уникальные зеленые пространства.
+              </p>
+              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                Мы верим, что каждый участок имеет свой характер и потенциал. Наша задача — раскрыть его, создав гармоничное пространство для отдыха и вдохновения.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icon name="Award" className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-1">Профессиональный подход</h3>
+                    <p className="text-muted-foreground">Сертифицированные специалисты с профильным образованием и многолетним опытом</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icon name="Shield" className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-1">Гарантия качества</h3>
+                    <p className="text-muted-foreground">Гарантия на все работы и растения. Бесплатное обслуживание в первый год</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icon name="Heart" className="text-primary" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-lg mb-1">Любовь к природе</h3>
+                    <p className="text-muted-foreground">Используем экологичные материалы и заботимся о сохранении природной среды</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
