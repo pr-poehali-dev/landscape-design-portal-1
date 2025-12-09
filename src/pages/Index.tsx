@@ -437,6 +437,7 @@ const Index = () => {
                   <div>
                     <div className="font-semibold">Адрес</div>
                     <div className="text-muted-foreground">г. Сочи, Краснодарский край</div>
+                    <div className="text-sm text-muted-foreground/80 mt-1">Работаем по всему Сочи и близлежащим районам</div>
                   </div>
                 </div>
               </div>
