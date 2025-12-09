@@ -375,6 +375,16 @@ const Index = () => {
                   </div>
                 </div>
               </div>
+              <Button 
+                size="lg" 
+                className="mt-6 bg-[#25D366] hover:bg-[#20BA5A] text-white w-full md:w-auto"
+                asChild
+              >
+                <a href="https://wa.me/79994483326" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2">
+                  <Icon name="MessageCircle" size={20} />
+                  Написать в WhatsApp
+                </a>
+              </Button>
             </div>
             <Card>
               <CardHeader>
