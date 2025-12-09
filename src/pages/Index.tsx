@@ -147,7 +147,7 @@ const Index = () => {
               <span className="text-2xl font-bold text-primary">GreenScape</span>
             </div>
             <div className="hidden md:flex gap-6">
-              {['Главная', 'О нас', 'Услуги', 'Портфолио', 'Блог', 'Отзывы', 'Контакты'].map((item) => (
+              {['Главная', 'О нас', 'Услуги', 'Портфолио', 'Цены', 'Отзывы', 'Контакты'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
@@ -329,7 +329,121 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="блог" className="py-20 px-4 bg-muted/30">
+      <section id="цены" className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <Badge className="mb-4">Цены</Badge>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Прозрачные тарифы</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Стоимость работ зависит от площади участка и сложности проекта
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Card className="relative overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
+              <CardHeader>
+                <Badge className="w-fit mb-2 bg-primary/10 text-primary">Базовый</Badge>
+                <CardTitle className="text-3xl">от 50 000 ₽</CardTitle>
+                <CardDescription>Для небольших участков до 6 соток</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Выезд на участок и консультация</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Эскизный проект в 2D</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Подбор растений</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Смета на материалы</span>
+                </div>
+                <Button className="w-full mt-6" variant="outline">Выбрать тариф</Button>
+              </CardContent>
+            </Card>
+
+            <Card className="relative overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2 border-2 border-primary">
+              <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-4 py-1 text-sm font-semibold">
+                Популярный
+              </div>
+              <CardHeader>
+                <Badge className="w-fit mb-2 bg-primary text-primary-foreground">Стандарт</Badge>
+                <CardTitle className="text-3xl">от 120 000 ₽</CardTitle>
+                <CardDescription>Для участков от 6 до 15 соток</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Все из базового тарифа</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">3D визуализация проекта</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Проект системы полива</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Проект освещения</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Авторский надзор</span>
+                </div>
+                <Button className="w-full mt-6">Выбрать тариф</Button>
+              </CardContent>
+            </Card>
+
+            <Card className="relative overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
+              <CardHeader>
+                <Badge className="w-fit mb-2 bg-accent/10 text-accent">Премиум</Badge>
+                <CardTitle className="text-3xl">от 250 000 ₽</CardTitle>
+                <CardDescription>Для больших участков от 15 соток</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Все из стандартного тарифа</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Полная реализация проекта</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Малые архитектурные формы</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Гарантия на растения 2 года</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Icon name="Check" className="text-primary flex-shrink-0 mt-0.5" size={20} />
+                  <span className="text-sm">Бесплатное обслуживание 1 год</span>
+                </div>
+                <Button className="w-full mt-6" variant="outline">Выбрать тариф</Button>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-muted-foreground mb-4">
+              Нужен индивидуальный расчет? Свяжитесь с нами для точной оценки вашего проекта
+            </p>
+            <Button size="lg" variant="outline">
+              <Icon name="Calculator" className="mr-2" size={20} />
+              Рассчитать стоимость
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section id="блог" className="py-20 px-4">
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <Badge className="mb-4">Блог</Badge>
